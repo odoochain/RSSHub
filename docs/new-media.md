@@ -90,6 +90,12 @@ pageClass: routes
 
 <Route author="nczitzk" example="/aljazeera/news" path="/aljazeera/news"/>
 
+## ASML 阿斯麦
+
+### Press releases & announcements
+
+<Route author="nczitzk" example="/asml/press-releases" path="/asml/press-releases"/>
+
 ## BOF
 
 ### 首页
@@ -1027,6 +1033,12 @@ others = 热点新闻 + 滚动新闻
 
 </Route>
 
+## 国际数学联合会
+
+### 菲尔兹奖
+
+<Route author="nczitzk" example="/mathunion/fields-medal" path="/mathunion/fields-medal"/>
+
 ## 果壳网
 
 ### 科学人
@@ -1912,6 +1924,20 @@ column 为 third 时可选的 category:
 
 </Route>
 
+## 有趣天文奇观
+
+### 首页
+
+<Route author="nczitzk" example="/interesting-sky" path="/interesting-sky"/>
+
+### 年度天象（天文年历）
+
+<Route author="nczitzk" example="/interesting-sky/astronomical_events" path="/interesting-sky/astronomical_events/:year?" :paramsDesc="['年份，默认为当前年份']"/>
+
+### 近期事件专题
+
+<Route author="nczitzk" example="/interesting-sky/recent-interesting" path="/interesting-sky/recent-interesting"/>
+
 ## 遠見
 
 <Route author="laampui" example="/gvm/index/health" path="/gvm/index/:category?" :paramsDesc="['見下表, 默認爲 newest']">
@@ -1931,6 +1957,18 @@ column 为 third 时可选的 category:
 | CCF 新闻   | CCF 聚焦 | ACM 信息 |
 | ---------- | -------- | -------- |
 | Media_list | Focus    | ACM_News |
+
+</Route>
+
+## 中国机械工程学会
+
+### 学会新闻
+
+<Route author="nczitzk" example="/cmes/news" path="/cmes/news/:category?" :paramsDesc="['分类，见下表，默认为 学会要闻']">
+
+| 学会要闻    | 学会动态 | 科技新闻 |
+| ----------- | -------- | -------- |
+| Information | Dynamics | TechNews |
 
 </Route>
 
